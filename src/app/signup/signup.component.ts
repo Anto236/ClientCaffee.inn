@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+  password = true;
+  confirmpassword = true;
+  signupForm: any = FormGroup;
+  responseMessage: any;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder
+
+  ) { }
 
   ngOnInit(): void {
   }
+
 
 }
