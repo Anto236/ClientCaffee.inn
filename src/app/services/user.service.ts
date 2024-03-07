@@ -10,9 +10,9 @@ export class UserService {
   url = environment.apiUrl;
   constructor(private httpClient: HttpClient) { }
 
-  signUp(data: any) {
+  signup(data: any) {
     return this.httpClient.post(this.url +
-      "/users/signup", data, {
+      "/user/signup", data, {
       headers: new HttpHeaders().set('Content-Type', 'application/json')
     })
   }

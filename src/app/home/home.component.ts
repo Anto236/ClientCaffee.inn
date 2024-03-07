@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleSignUpAction() {
+  handleSignupAction() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.width = "550px";
     this.dialog.open(SignupComponent, dialogConfig);
